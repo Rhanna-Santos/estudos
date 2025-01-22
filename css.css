@@ -18,7 +18,7 @@ body{
     width: 300px;
 }
 #display{
-    grid-column: span 4;
+    grid-column: span 3;
     height: 50px;
     color: #ffffff;
     font-size: 1.5em;
@@ -38,7 +38,36 @@ button{
     justify-content: center;
     cursor: pointer;
     align-items: center;
+    border: 2px solid #808080;
+    position: relative;
 }
 button:hover{
     background-color: #ffffff;
+    border-color: #3a0d0d;
+}
+#tc{
+    height: 70px;
+}
+#tc ion-icon{
+    font-size: 35px;
+}
+#tc:active ion-icon{
+    transform: scale(1.1);
+    color: #808080;
+}
+.buttonScientific {
+    grid-column: span 4;
+    display: none;
+    grid-template-columns: repeat(4,1fr);
+    gap: 10px;
+}
+#igual {
+    background-color: #3a0d0d;
+}
+hr{
+    width: 450%;
+    height: 1.5px;
+    background-color: #f0f0f0;
+    border: none;
+    margin: 10px 0;
 }
